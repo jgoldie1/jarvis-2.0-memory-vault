@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Golden Era Marketplace</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <main>
+    <h1>Golden Era Marketplace</h1>
+    <p>Self-healed dashboard scaffold is active.</p>
+    <img src="images_processed/saturn.jpg" alt="Saturn" />
+  </main>
+  <script src="js/app.js"></script>
+
+<script>
+document.querySelectorAll('img').forEach((img) => {
+  img.addEventListener('error', () => {
+    console.warn('[copilot-autofix] Missing image:', img.getAttribute('src'));
+  });
+});
+</script>
+</body>
+</html>
