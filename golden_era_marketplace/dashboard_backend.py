@@ -1,25 +1,52 @@
 import json
 import time
 import random
-from flask import Flask, jsonify
+from pathlib import Path
+from flask import Flask, jsonify, send_file, redirect
 
 app = Flask(__name__)
 
-wallet_file = "fintech/wallet.json"
-nfts_file = "fintech/nfts.json"
-passport_file = "fintech/passport.json"
-ai_stats_file = "fintech/ai_stats.json"
+# Use paths relative to this file so endpoints work regardless of CWD
+BASE = Path(__file__).resolve().parent
+FINTECH_DIR = BASE / "fintech"
+wallet_file = FINTECH_DIR / "wallet.json"
+nfts_file = FINTECH_DIR / "nfts.json"
+passport_file = FINTECH_DIR / "passport.json"
+ai_stats_file = FINTECH_DIR / "ai_stats.json"
 
-def load_json(path):
+def load_json(path: Path):
     try:
+        if not Path(path).exists():
+            return {}
         with open(path, "r") as f:
             return json.load(f)
-    except:
+    except Exception:
         return {}
 
-def save_json(path, data):
-    with open(path, "w") as f:
-        json.dump(data, f, indent=2)
+def save_json(path: Path, data):
+    try:
+        Path(path).parent.mkdir(parents=True, exist_ok=True)
+        with open(path, "w") as f:
+            json.dump(data, f, indent=2)
+    except Exception:
+        # swallow errors but log to stdout for visibility
+        print(f"Failed to write JSON to {path}")
+
+# Static server host (frontend preview)
+STATIC_HOST = "http://127.0.0.1:8000"
+
+
+@app.route("/")
+def index():
+    index_path = BASE / "index.html"
+    if index_path.exists():
+        return send_file(index_path)
+    return redirect(STATIC_HOST)
+
+
+@app.route("/redirect")
+def redirect_to_static():
+    return redirect(STATIC_HOST)
 
 # Simulate AI stats updates
 def update_ai_stats():
