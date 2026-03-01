@@ -130,7 +130,7 @@ class UltimateCopilot:
             entry = {
                 "time": datetime.utcnow().isoformat() + "Z",
                 "amount": change,
-                "desc": random.choice(["coffee", "nft-sale", "tip", "refund", "mint"]) ,
+                "desc": random.choice(["coffee", "nft-sale", "tip", "refund", "mint"]),
             }
             txs.setdefault("transactions", []).insert(0, entry)
             # keep recent 200
