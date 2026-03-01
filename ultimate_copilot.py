@@ -189,21 +189,44 @@ copilot = UltimateCopilot(interval=10, tts=False)
 
 
 if app:
+    # Simple API key support: if ULTIMATE_API_KEY env var is set, require it in
+    # header 'X-API-Key' for sensitive endpoints. Also add CORS header for local
+    # frontend polling.
+    import os
+
+    API_KEY = os.environ.get("ULTIMATE_API_KEY")
+
+    def require_key():
+        if not API_KEY:
+            return True
+        key = request.headers.get("X-API-Key") or request.args.get("api_key")
+        return key == API_KEY
+
+    def json_response(payload, status=200):
+        resp = jsonify(payload)
+        resp.status_code = status
+        resp.headers["Access-Control-Allow-Origin"] = "*"
+        return resp
+
     @app.route("/api/stats")
     def api_stats():
+        if not require_key():
+            return json_response({"ok": False, "message": "unauthorized"}, 401)
         ai = safe_load_json(FINTECH / "ai_stats.json", {})
         wallet = safe_load_json(FINTECH / "wallet.json", {"balance": 0})
         txs = safe_load_json(FINTECH / "transactions.json", {"transactions": []})
-        return jsonify({"ai": ai, "wallet": wallet, "transactions": txs})
+        return json_response({"ai": ai, "wallet": wallet, "transactions": txs})
 
     @app.route("/api/trigger", methods=["POST"])
     def api_trigger():
+        if not require_key():
+            return json_response({"ok": False, "message": "unauthorized"}, 401)
         data = request.get_json(silent=True) or {}
         action = data.get("action", "tick")
         if action == "tick":
             result = copilot.cycle()
-            return jsonify({"ok": True, "result": result})
-        return jsonify({"ok": False, "message": "unknown action"}), 400
+            return json_response({"ok": True, "result": result})
+        return json_response({"ok": False, "message": "unknown action"}, 400)
 
 
 def main(run_server: bool = True):
