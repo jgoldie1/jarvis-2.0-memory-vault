@@ -1,0 +1,344 @@
+2026-03-01 17:45:18,427 INFO UltimateCopilot loop starting (interval=10)
+2026-03-01 17:45:18,427 INFO UltimateCopilot started
+2026-03-01 17:45:18,428 INFO Updated ai_stats: {'curve': 0, 'lyons': 0, 'stubb': 0}
+2026-03-01 17:45:18,433 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5002
+ * Running on http://10.0.10.138:5002
+2026-03-01 17:45:18,433 INFO [33mPress CTRL+C to quit[0m
+2026-03-01 17:45:18,434 INFO Updated wallet: {'balance': -3.0}, txs: 1
+2026-03-01 17:45:18,435 WARNING Alert: Negative balance -3.0
+2026-03-01 17:45:28,435 INFO Updated ai_stats: {'curve': 0, 'lyons': 0, 'stubb': 0}
+2026-03-01 17:45:28,437 INFO Updated wallet: {'balance': -5.14}, txs: 2
+2026-03-01 17:45:28,437 WARNING Alert: Negative balance -5.14
+2026-03-01 17:45:28,533 INFO 127.0.0.1 - - [01/Mar/2026 17:45:28] "[33mGET / HTTP/1.1[0m" 404 -
+2026-03-01 17:45:29,050 INFO 127.0.0.1 - - [01/Mar/2026 17:45:29] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-03-01 17:45:38,438 INFO Updated ai_stats: {'curve': 0, 'lyons': 0, 'stubb': 0}
+2026-03-01 17:45:38,439 INFO Updated wallet: {'balance': -4.91}, txs: 3
+2026-03-01 17:45:38,439 WARNING Alert: Negative balance -4.91
+2026-03-01 17:45:48,440 INFO Updated ai_stats: {'curve': 0, 'lyons': 0, 'stubb': 0}
+2026-03-01 17:45:48,441 INFO Updated wallet: {'balance': -5.48}, txs: 4
+2026-03-01 17:45:48,441 WARNING Alert: Negative balance -5.48
+2026-03-01 17:45:58,441 INFO Updated ai_stats: {'curve': 0, 'lyons': 0, 'stubb': 0}
+2026-03-01 17:45:58,442 INFO Updated wallet: {'balance': -1.9}, txs: 5
+2026-03-01 17:45:58,443 WARNING Alert: Negative balance -1.9
+2026-03-01 17:46:05,809 INFO 127.0.0.1 - - [01/Mar/2026 17:46:05] "GET /api/stats HTTP/1.1" 200 -
+2026-03-01 17:46:08,443 INFO Updated ai_stats: {'curve': 0, 'lyons': 0, 'stubb': 0}
+2026-03-01 17:46:08,445 INFO Updated wallet: {'balance': -4.78}, txs: 6
+2026-03-01 17:46:08,445 WARNING Alert: Negative balance -4.78
+2026-03-01 17:46:18,445 INFO Updated ai_stats: {'curve': 0, 'lyons': 0, 'stubb': 0}
+2026-03-01 17:46:18,446 INFO Updated wallet: {'balance': -4.56}, txs: 7
+2026-03-01 17:46:18,447 WARNING Alert: Negative balance -4.56
+2026-03-01 17:46:28,447 INFO Updated ai_stats: {'curve': 0, 'lyons': 0, 'stubb': 0}
+2026-03-01 17:46:28,448 INFO Updated wallet: {'balance': -0.67}, txs: 8
+2026-03-01 17:46:28,448 WARNING Alert: Negative balance -0.67
+2026-03-01 17:46:38,449 INFO Updated ai_stats: {'curve': 0, 'lyons': 0, 'stubb': 0}
+2026-03-01 17:46:38,451 INFO Updated wallet: {'balance': 4.33}, txs: 9
+2026-03-01 17:46:48,452 INFO Updated ai_stats: {'curve': 0, 'lyons': 0, 'stubb': 0}
+2026-03-01 17:46:48,452 INFO Updated wallet: {'balance': 2.89}, txs: 10
+2026-03-01 17:46:58,454 INFO Updated ai_stats: {'curve': 0, 'lyons': 0, 'stubb': 0}
+2026-03-01 17:46:58,458 INFO Updated wallet: {'balance': 8.81}, txs: 11
+2026-03-01 17:47:08,459 INFO Updated ai_stats: {'curve': 0, 'lyons': 0, 'stubb': 0}
+2026-03-01 17:47:08,460 INFO Updated wallet: {'balance': 9.2}, txs: 12
+2026-03-01 17:47:18,461 INFO Updated ai_stats: {'curve': 0, 'lyons': 0, 'stubb': 0}
+2026-03-01 17:47:18,463 INFO Updated wallet: {'balance': 16.64}, txs: 13
+2026-03-01 17:47:28,464 INFO Updated ai_stats: {'curve': 0, 'lyons': 0, 'stubb': 0}
+2026-03-01 17:47:28,465 INFO Updated wallet: {'balance': 19.03}, txs: 14
+2026-03-01 17:47:38,468 INFO Updated ai_stats: {'curve': 0, 'lyons': 0, 'stubb': 0}
+2026-03-01 17:47:38,469 INFO Updated wallet: {'balance': 27.99}, txs: 15
+2026-03-01 17:47:48,470 INFO Updated ai_stats: {'curve': 0, 'lyons': 0, 'stubb': 0}
+2026-03-01 17:47:48,516 INFO Updated wallet: {'balance': 26.66}, txs: 16
+2026-03-01 17:47:58,517 INFO Updated ai_stats: {'curve': 0, 'lyons': 0, 'stubb': 0}
+2026-03-01 17:47:58,519 INFO Updated wallet: {'balance': 32.12}, txs: 17
+2026-03-01 17:48:08,519 INFO Updated ai_stats: {'curve': 0, 'lyons': 0, 'stubb': 0}
+2026-03-01 17:48:08,521 INFO Updated wallet: {'balance': 37.86}, txs: 18
+2026-03-01 17:48:18,522 INFO Updated ai_stats: {'curve': 0, 'lyons': 0, 'stubb': 0}
+2026-03-01 17:48:18,523 INFO Updated wallet: {'balance': 36.93}, txs: 19
+2026-03-01 17:48:28,524 INFO Updated ai_stats: {'curve': 0, 'lyons': 0, 'stubb': 0}
+2026-03-01 17:48:28,525 INFO Updated wallet: {'balance': 34.08}, txs: 20
+2026-03-01 17:48:38,526 INFO Updated ai_stats: {'curve': 0, 'lyons': 0, 'stubb': 0}
+2026-03-01 17:48:38,527 INFO Updated wallet: {'balance': 43.66}, txs: 21
+2026-03-01 17:48:48,528 INFO Updated ai_stats: {'curve': 0, 'lyons': 0, 'stubb': 0}
+2026-03-01 17:48:48,530 INFO Updated wallet: {'balance': 41.72}, txs: 22
+2026-03-01 17:48:58,530 INFO Updated ai_stats: {'curve': 0, 'lyons': 0, 'stubb': 0}
+2026-03-01 17:48:58,532 INFO Updated wallet: {'balance': 41.0}, txs: 23
+2026-03-01 17:49:08,533 INFO Updated ai_stats: {'curve': 0, 'lyons': 0, 'stubb': 0}
+2026-03-01 17:49:08,534 INFO Updated wallet: {'balance': 36.9}, txs: 24
+2026-03-01 17:49:18,535 INFO Updated ai_stats: {'curve': 0, 'lyons': 0, 'stubb': 0}
+2026-03-01 17:49:18,536 INFO Updated wallet: {'balance': 40.71}, txs: 25
+2026-03-01 17:49:28,539 INFO Updated ai_stats: {'curve': 0, 'lyons': 0, 'stubb': 0}
+2026-03-01 17:49:28,540 INFO Updated wallet: {'balance': 40.42}, txs: 26
+2026-03-01 17:49:38,540 INFO Updated ai_stats: {'curve': 0, 'lyons': 0, 'stubb': 0}
+2026-03-01 17:49:38,542 INFO Updated wallet: {'balance': 44.19}, txs: 27
+2026-03-01 17:49:48,543 INFO Updated ai_stats: {'curve': 0, 'lyons': 0, 'stubb': 0}
+2026-03-01 17:49:48,544 INFO Updated wallet: {'balance': 47.36}, txs: 28
+2026-03-01 17:49:58,545 INFO Updated ai_stats: {'curve': 0, 'lyons': 0, 'stubb': 0}
+2026-03-01 17:49:58,546 INFO Updated wallet: {'balance': 46.04}, txs: 29
+2026-03-01 17:50:08,547 INFO Updated ai_stats: {'curve': 0, 'lyons': 0, 'stubb': 0}
+2026-03-01 17:50:08,548 INFO Updated wallet: {'balance': 53.23}, txs: 30
+2026-03-01 17:50:18,549 INFO Updated ai_stats: {'curve': 0, 'lyons': 0, 'stubb': 0}
+2026-03-01 17:50:18,550 INFO Updated wallet: {'balance': 55.22}, txs: 31
+2026-03-01 17:50:28,553 INFO Updated ai_stats: {'curve': 0, 'lyons': 0, 'stubb': 0}
+2026-03-01 17:50:28,556 INFO Updated wallet: {'balance': 62.67}, txs: 32
+2026-03-01 17:50:38,557 INFO Updated ai_stats: {'curve': 0, 'lyons': 0, 'stubb': 0}
+2026-03-01 17:50:38,558 INFO Updated wallet: {'balance': 64.67}, txs: 33
+2026-03-01 17:50:48,559 INFO Updated ai_stats: {'curve': 0, 'lyons': 0, 'stubb': 0}
+2026-03-01 17:50:48,560 INFO Updated wallet: {'balance': 68.37}, txs: 34
+2026-03-01 17:50:58,561 INFO Updated ai_stats: {'curve': 0, 'lyons': 0, 'stubb': 0}
+2026-03-01 17:50:58,563 INFO Updated wallet: {'balance': 69.61}, txs: 35
+2026-03-01 17:51:08,563 INFO Updated ai_stats: {'curve': 0, 'lyons': 0, 'stubb': 0}
+2026-03-01 17:51:08,565 INFO Updated wallet: {'balance': 74.74}, txs: 36
+2026-03-01 17:51:18,565 INFO Updated ai_stats: {'curve': 0, 'lyons': 0, 'stubb': 0}
+2026-03-01 17:51:18,567 INFO Updated wallet: {'balance': 83.84}, txs: 37
+2026-03-01 17:51:28,568 INFO Updated ai_stats: {'curve': 0, 'lyons': 0, 'stubb': 0}
+2026-03-01 17:51:28,570 INFO Updated wallet: {'balance': 85.83}, txs: 38
+2026-03-01 17:51:38,570 INFO Updated ai_stats: {'curve': 0, 'lyons': 0, 'stubb': 0}
+2026-03-01 17:51:38,572 INFO Updated wallet: {'balance': 90.62}, txs: 39
+2026-03-01 17:51:48,573 INFO Updated ai_stats: {'curve': 0, 'lyons': 0, 'stubb': 0}
+2026-03-01 17:51:48,575 INFO Updated wallet: {'balance': 94.05}, txs: 40
+2026-03-01 17:51:58,576 INFO Updated ai_stats: {'curve': 0, 'lyons': 0, 'stubb': 0}
+2026-03-01 17:51:58,577 INFO Updated wallet: {'balance': 96.7}, txs: 41
+2026-03-01 17:52:08,579 INFO Updated ai_stats: {'curve': 0, 'lyons': 0, 'stubb': 0}
+2026-03-01 17:52:08,581 INFO Updated wallet: {'balance': 96.62}, txs: 42
+2026-03-01 17:52:18,582 INFO Updated ai_stats: {'curve': 0, 'lyons': 0, 'stubb': 0}
+2026-03-01 17:52:18,583 INFO Updated wallet: {'balance': 105.41}, txs: 43
+2026-03-01 17:52:28,584 INFO Updated ai_stats: {'curve': 0, 'lyons': 0, 'stubb': 0}
+2026-03-01 17:52:28,586 INFO Updated wallet: {'balance': 110.96}, txs: 44
+2026-03-01 17:52:38,587 INFO Updated ai_stats: {'curve': 0, 'lyons': 0, 'stubb': 0}
+2026-03-01 17:52:38,589 INFO Updated wallet: {'balance': 114.58}, txs: 45
+2026-03-01 17:52:48,590 INFO Updated ai_stats: {'curve': 0, 'lyons': 0, 'stubb': 0}
+2026-03-01 17:52:48,593 INFO Updated wallet: {'balance': 120.45}, txs: 46
+2026-03-01 17:52:58,594 INFO Updated ai_stats: {'curve': 0, 'lyons': 0, 'stubb': 0}
+2026-03-01 17:52:58,595 INFO Updated wallet: {'balance': 117.06}, txs: 47
+2026-03-01 17:53:08,595 INFO Updated ai_stats: {'curve': 0, 'lyons': 0, 'stubb': 0}
+2026-03-01 17:53:08,598 INFO Updated wallet: {'balance': 112.19}, txs: 48
+2026-03-01 17:53:18,598 INFO Updated ai_stats: {'curve': 0, 'lyons': 0, 'stubb': 0}
+2026-03-01 17:53:18,599 INFO Updated wallet: {'balance': 112.88}, txs: 49
+2026-03-01 17:53:28,601 INFO Updated ai_stats: {'curve': 0, 'lyons': 0, 'stubb': 0}
+2026-03-01 17:53:28,602 INFO Updated wallet: {'balance': 113.86}, txs: 50
+2026-03-01 17:53:38,602 INFO Updated ai_stats: {'curve': 0, 'lyons': 0, 'stubb': 0}
+2026-03-01 17:53:38,604 INFO Updated wallet: {'balance': 115.46}, txs: 51
+2026-03-01 17:53:48,605 INFO Updated ai_stats: {'curve': 0, 'lyons': 0, 'stubb': 0}
+2026-03-01 17:53:48,606 INFO Updated wallet: {'balance': 118.66}, txs: 52
+2026-03-01 17:53:58,607 INFO Updated ai_stats: {'curve': 0, 'lyons': 0, 'stubb': 0}
+2026-03-01 17:53:58,610 INFO Updated wallet: {'balance': 122.69}, txs: 53
+2026-03-01 17:54:08,612 INFO Updated ai_stats: {'curve': 0, 'lyons': 0, 'stubb': 0}
+2026-03-01 17:54:08,615 INFO Updated wallet: {'balance': 119.55}, txs: 54
+2026-03-01 17:54:18,616 INFO Updated ai_stats: {'curve': 0, 'lyons': 0, 'stubb': 0}
+2026-03-01 17:54:18,617 INFO Updated wallet: {'balance': 118.41}, txs: 55
+2026-03-01 17:54:28,618 INFO Updated ai_stats: {'curve': 0, 'lyons': 0, 'stubb': 0}
+2026-03-01 17:54:28,620 INFO Updated wallet: {'balance': 128.3}, txs: 56
+2026-03-01 17:54:38,621 INFO Updated ai_stats: {'curve': 0, 'lyons': 0, 'stubb': 0}
+2026-03-01 17:54:38,622 INFO Updated wallet: {'balance': 134.26}, txs: 57
+2026-03-01 17:54:48,623 INFO Updated ai_stats: {'curve': 0, 'lyons': 0, 'stubb': 0}
+2026-03-01 17:54:48,624 INFO Updated wallet: {'balance': 140.86}, txs: 58
+2026-03-01 17:54:58,625 INFO Updated ai_stats: {'curve': 0, 'lyons': 0, 'stubb': 0}
+2026-03-01 17:54:58,626 INFO Updated wallet: {'balance': 150.22}, txs: 59
+2026-03-01 17:55:08,631 INFO Updated ai_stats: {'curve': 0, 'lyons': 0, 'stubb': 0}
+2026-03-01 17:55:08,641 INFO Updated wallet: {'balance': 150.42}, txs: 60
+2026-03-01 17:55:18,642 INFO Updated ai_stats: {'curve': 0, 'lyons': 0, 'stubb': 0}
+2026-03-01 17:55:18,644 INFO Updated wallet: {'balance': 157.85}, txs: 61
+2026-03-01 17:55:28,645 INFO Updated ai_stats: {'curve': 0, 'lyons': 0, 'stubb': 0}
+2026-03-01 17:55:28,646 INFO Updated wallet: {'balance': 163.87}, txs: 62
+2026-03-01 17:55:38,647 INFO Updated ai_stats: {'curve': 0, 'lyons': 0, 'stubb': 0}
+2026-03-01 17:55:38,648 INFO Updated wallet: {'balance': 170.15}, txs: 63
+2026-03-01 17:55:48,649 INFO Updated ai_stats: {'curve': 0, 'lyons': 0, 'stubb': 0}
+2026-03-01 17:55:48,651 INFO Updated wallet: {'balance': 178.41}, txs: 64
+2026-03-01 17:55:58,651 INFO Updated ai_stats: {'curve': 0, 'lyons': 0, 'stubb': 0}
+2026-03-01 17:55:58,653 INFO Updated wallet: {'balance': 185.67}, txs: 65
+2026-03-01 17:56:08,653 INFO Updated ai_stats: {'curve': 0, 'lyons': 0, 'stubb': 0}
+2026-03-01 17:56:08,655 INFO Updated wallet: {'balance': 181.21}, txs: 66
+2026-03-01 17:56:18,657 INFO Updated ai_stats: {'curve': 0, 'lyons': 0, 'stubb': 0}
+2026-03-01 17:56:18,661 INFO Updated wallet: {'balance': 182.07}, txs: 67
+2026-03-01 17:56:28,662 INFO Updated ai_stats: {'curve': 0, 'lyons': 0, 'stubb': 0}
+2026-03-01 17:56:28,664 INFO Updated wallet: {'balance': 180.22}, txs: 68
+2026-03-01 17:56:38,665 INFO Updated ai_stats: {'curve': 0, 'lyons': 0, 'stubb': 0}
+2026-03-01 17:56:38,667 INFO Updated wallet: {'balance': 178.67}, txs: 69
+2026-03-01 17:56:48,668 INFO Updated ai_stats: {'curve': 0, 'lyons': 0, 'stubb': 0}
+2026-03-01 17:56:48,669 INFO Updated wallet: {'balance': 179.09}, txs: 70
+2026-03-01 17:56:58,670 INFO Updated ai_stats: {'curve': 0, 'lyons': 0, 'stubb': 0}
+2026-03-01 17:56:58,672 INFO Updated wallet: {'balance': 179.02}, txs: 71
+2026-03-01 17:57:08,672 INFO Updated ai_stats: {'curve': 0, 'lyons': 0, 'stubb': 0}
+2026-03-01 17:57:08,674 INFO Updated wallet: {'balance': 187.02}, txs: 72
+2026-03-01 17:57:18,674 INFO Updated ai_stats: {'curve': 0, 'lyons': 0, 'stubb': 0}
+2026-03-01 17:57:18,676 INFO Updated wallet: {'balance': 186.81}, txs: 73
+2026-03-01 17:57:28,677 INFO Updated ai_stats: {'curve': 0, 'lyons': 0, 'stubb': 0}
+2026-03-01 17:57:28,679 INFO Updated wallet: {'balance': 186.01}, txs: 74
+2026-03-01 17:57:38,680 INFO Updated ai_stats: {'curve': 0, 'lyons': 0, 'stubb': 0}
+2026-03-01 17:57:38,683 INFO Updated wallet: {'balance': 186.9}, txs: 75
+2026-03-01 17:57:48,688 INFO Updated ai_stats: {'curve': 0, 'lyons': 0, 'stubb': 0}
+2026-03-01 17:57:48,695 INFO Updated wallet: {'balance': 183.15}, txs: 76
+2026-03-01 17:57:58,701 INFO Updated ai_stats: {'curve': 0, 'lyons': 0, 'stubb': 0}
+2026-03-01 17:57:58,705 INFO Updated wallet: {'balance': 180.29}, txs: 77
+2026-03-01 17:58:08,705 INFO Updated ai_stats: {'curve': 0, 'lyons': 0, 'stubb': 0}
+2026-03-01 17:58:08,708 INFO Updated wallet: {'balance': 176.16}, txs: 78
+2026-03-01 17:58:18,709 INFO Updated ai_stats: {'curve': 0, 'lyons': 0, 'stubb': 0}
+2026-03-01 17:58:18,711 INFO Updated wallet: {'balance': 177.87}, txs: 79
+2026-03-01 17:58:28,711 INFO Updated ai_stats: {'curve': 0, 'lyons': 0, 'stubb': 0}
+2026-03-01 17:58:28,721 INFO Updated wallet: {'balance': 180.64}, txs: 80
+2026-03-01 17:58:38,723 INFO Updated ai_stats: {'curve': 0, 'lyons': 0, 'stubb': 0}
+2026-03-01 17:58:38,733 INFO Updated wallet: {'balance': 186.53}, txs: 81
+2026-03-01 17:58:48,734 INFO Updated ai_stats: {'curve': 0, 'lyons': 0, 'stubb': 0}
+2026-03-01 17:58:48,736 INFO Updated wallet: {'balance': 191.63}, txs: 82
+2026-03-01 17:58:58,737 INFO Updated ai_stats: {'curve': 0, 'lyons': 0, 'stubb': 0}
+2026-03-01 17:58:58,739 INFO Updated wallet: {'balance': 189.88}, txs: 83
+2026-03-01 17:59:08,739 INFO Updated ai_stats: {'curve': 0, 'lyons': 0, 'stubb': 0}
+2026-03-01 17:59:08,741 INFO Updated wallet: {'balance': 194.88}, txs: 84
+2026-03-01 17:59:18,742 INFO Updated ai_stats: {'curve': 0, 'lyons': 0, 'stubb': 0}
+2026-03-01 17:59:18,744 INFO Updated wallet: {'balance': 192.57}, txs: 85
+2026-03-01 17:59:28,745 INFO Updated ai_stats: {'curve': 0, 'lyons': 0, 'stubb': 0}
+2026-03-01 17:59:28,746 INFO Updated wallet: {'balance': 188.39}, txs: 86
+2026-03-01 17:59:38,747 INFO Updated ai_stats: {'curve': 0, 'lyons': 0, 'stubb': 0}
+2026-03-01 17:59:38,749 INFO Updated wallet: {'balance': 189.55}, txs: 87
+2026-03-01 17:59:48,752 INFO Updated ai_stats: {'curve': 0, 'lyons': 0, 'stubb': 0}
+2026-03-01 17:59:48,756 INFO Updated wallet: {'balance': 195.68}, txs: 88
+2026-03-01 17:59:58,757 INFO Updated ai_stats: {'curve': 0, 'lyons': 0, 'stubb': 0}
+2026-03-01 17:59:58,759 INFO Updated wallet: {'balance': 190.74}, txs: 89
+2026-03-01 18:00:08,760 INFO Updated ai_stats: {'curve': 0, 'lyons': 0, 'stubb': 0}
+2026-03-01 18:00:08,762 INFO Updated wallet: {'balance': 190.24}, txs: 90
+2026-03-01 18:00:18,762 INFO Updated ai_stats: {'curve': 0, 'lyons': 0, 'stubb': 0}
+2026-03-01 18:00:18,765 INFO Updated wallet: {'balance': 185.27}, txs: 91
+2026-03-01 18:00:28,769 INFO Updated ai_stats: {'curve': 0, 'lyons': 0, 'stubb': 0}
+2026-03-01 18:00:28,777 INFO Updated wallet: {'balance': 186.0}, txs: 92
+2026-03-01 18:00:38,778 INFO Updated ai_stats: {'curve': 0, 'lyons': 0, 'stubb': 0}
+2026-03-01 18:00:38,780 INFO Updated wallet: {'balance': 182.16}, txs: 93
+2026-03-01 18:00:48,782 INFO Updated ai_stats: {'curve': 0, 'lyons': 0, 'stubb': 0}
+2026-03-01 18:00:48,785 INFO Updated wallet: {'balance': 190.88}, txs: 94
+2026-03-01 18:00:58,786 INFO Updated ai_stats: {'curve': 0, 'lyons': 0, 'stubb': 0}
+2026-03-01 18:00:58,788 INFO Updated wallet: {'balance': 195.3}, txs: 95
+2026-03-01 18:01:08,788 INFO Updated ai_stats: {'curve': 0, 'lyons': 0, 'stubb': 0}
+2026-03-01 18:01:08,790 INFO Updated wallet: {'balance': 193.05}, txs: 96
+2026-03-01 18:01:18,791 INFO Updated ai_stats: {'curve': 0, 'lyons': 0, 'stubb': 0}
+2026-03-01 18:01:18,796 INFO Updated wallet: {'balance': 199.42}, txs: 97
+2026-03-01 18:01:28,797 INFO Updated ai_stats: {'curve': 0, 'lyons': 0, 'stubb': 0}
+2026-03-01 18:01:28,798 INFO Updated wallet: {'balance': 198.58}, txs: 98
+2026-03-01 18:01:38,799 INFO Updated ai_stats: {'curve': 0, 'lyons': 0, 'stubb': 0}
+2026-03-01 18:01:38,800 INFO Updated wallet: {'balance': 204.19}, txs: 99
+2026-03-01 18:01:48,801 INFO Updated ai_stats: {'curve': 0, 'lyons': 0, 'stubb': 0}
+2026-03-01 18:01:48,802 INFO Updated wallet: {'balance': 200.84}, txs: 100
+2026-03-01 18:01:58,803 INFO Updated ai_stats: {'curve': 0, 'lyons': 0, 'stubb': 0}
+2026-03-01 18:01:58,805 INFO Updated wallet: {'balance': 207.39}, txs: 101
+2026-03-01 18:02:08,805 INFO Updated ai_stats: {'curve': 0, 'lyons': 0, 'stubb': 0}
+2026-03-01 18:02:08,807 INFO Updated wallet: {'balance': 215.38}, txs: 102
+2026-03-01 18:02:18,807 INFO Updated ai_stats: {'curve': 0, 'lyons': 0, 'stubb': 0}
+2026-03-01 18:02:18,809 INFO Updated wallet: {'balance': 210.79}, txs: 103
+2026-03-01 18:02:28,810 INFO Updated ai_stats: {'curve': 0, 'lyons': 0, 'stubb': 0}
+2026-03-01 18:02:28,812 INFO Updated wallet: {'balance': 215.5}, txs: 104
+2026-03-01 18:02:38,813 INFO Updated ai_stats: {'curve': 0, 'lyons': 0, 'stubb': 0}
+2026-03-01 18:02:38,815 INFO Updated wallet: {'balance': 220.54}, txs: 105
+2026-03-01 18:02:48,816 INFO Updated ai_stats: {'curve': 0, 'lyons': 0, 'stubb': 0}
+2026-03-01 18:02:48,818 INFO Updated wallet: {'balance': 223.92}, txs: 106
+2026-03-01 18:02:58,818 INFO Updated ai_stats: {'curve': 0, 'lyons': 0, 'stubb': 0}
+2026-03-01 18:02:58,820 INFO Updated wallet: {'balance': 225.36}, txs: 107
+2026-03-01 18:03:08,821 INFO Updated ai_stats: {'curve': 0, 'lyons': 0, 'stubb': 0}
+2026-03-01 18:03:08,823 INFO Updated wallet: {'balance': 230.63}, txs: 108
+2026-03-01 18:03:18,823 INFO Updated ai_stats: {'curve': 0, 'lyons': 0, 'stubb': 0}
+2026-03-01 18:03:18,825 INFO Updated wallet: {'balance': 238.05}, txs: 109
+2026-03-01 18:03:28,825 INFO Updated ai_stats: {'curve': 0, 'lyons': 0, 'stubb': 0}
+2026-03-01 18:03:28,827 INFO Updated wallet: {'balance': 234.37}, txs: 110
+2026-03-01 18:03:38,828 INFO Updated ai_stats: {'curve': 0, 'lyons': 0, 'stubb': 0}
+2026-03-01 18:03:38,829 INFO Updated wallet: {'balance': 232.85}, txs: 111
+2026-03-01 18:03:48,830 INFO Updated ai_stats: {'curve': 0, 'lyons': 0, 'stubb': 0}
+2026-03-01 18:03:48,831 INFO Updated wallet: {'balance': 230.25}, txs: 112
+2026-03-01 18:03:58,834 INFO Updated ai_stats: {'curve': 0, 'lyons': 0, 'stubb': 0}
+2026-03-01 18:03:58,838 INFO Updated wallet: {'balance': 228.84}, txs: 113
+2026-03-01 18:04:08,839 INFO Updated ai_stats: {'curve': 0, 'lyons': 0, 'stubb': 0}
+2026-03-01 18:04:08,840 INFO Updated wallet: {'balance': 232.7}, txs: 114
+2026-03-01 18:04:18,841 INFO Updated ai_stats: {'curve': 0, 'lyons': 0, 'stubb': 0}
+2026-03-01 18:04:18,843 INFO Updated wallet: {'balance': 241.33}, txs: 115
+2026-03-01 18:04:28,844 INFO Updated ai_stats: {'curve': 0, 'lyons': 0, 'stubb': 0}
+2026-03-01 18:04:28,847 INFO Updated wallet: {'balance': 248.63}, txs: 116
+2026-03-01 18:04:38,848 INFO Updated ai_stats: {'curve': 0, 'lyons': 0, 'stubb': 0}
+2026-03-01 18:04:38,850 INFO Updated wallet: {'balance': 253.23}, txs: 117
+2026-03-01 18:04:48,851 INFO Updated ai_stats: {'curve': 0, 'lyons': 0, 'stubb': 0}
+2026-03-01 18:04:48,853 INFO Updated wallet: {'balance': 251.95}, txs: 118
+2026-03-01 18:04:58,854 INFO Updated ai_stats: {'curve': 0, 'lyons': 0, 'stubb': 0}
+2026-03-01 18:04:58,860 INFO Updated wallet: {'balance': 259.89}, txs: 119
+2026-03-01 18:05:08,862 INFO Updated ai_stats: {'curve': 0, 'lyons': 0, 'stubb': 0}
+2026-03-01 18:05:08,868 INFO Updated wallet: {'balance': 264.17}, txs: 120
+2026-03-01 18:05:18,869 INFO Updated ai_stats: {'curve': 0, 'lyons': 0, 'stubb': 0}
+2026-03-01 18:05:18,871 INFO Updated wallet: {'balance': 259.92}, txs: 121
+2026-03-01 18:05:28,871 INFO Updated ai_stats: {'curve': 0, 'lyons': 0, 'stubb': 0}
+2026-03-01 18:05:28,873 INFO Updated wallet: {'balance': 260.24}, txs: 122
+2026-03-01 18:05:38,874 INFO Updated ai_stats: {'curve': 0, 'lyons': 0, 'stubb': 0}
+2026-03-01 18:05:38,876 INFO Updated wallet: {'balance': 264.68}, txs: 123
+2026-03-01 18:05:48,877 INFO Updated ai_stats: {'curve': 0, 'lyons': 0, 'stubb': 0}
+2026-03-01 18:05:48,880 INFO Updated wallet: {'balance': 260.15}, txs: 124
+2026-03-01 18:05:58,880 INFO Updated ai_stats: {'curve': 0, 'lyons': 0, 'stubb': 0}
+2026-03-01 18:05:58,884 INFO Updated wallet: {'balance': 269.28}, txs: 125
+2026-03-01 18:06:08,885 INFO Updated ai_stats: {'curve': 0, 'lyons': 0, 'stubb': 0}
+2026-03-01 18:06:08,888 INFO Updated wallet: {'balance': 273.39}, txs: 126
+2026-03-01 18:06:18,888 INFO Updated ai_stats: {'curve': 0, 'lyons': 0, 'stubb': 0}
+2026-03-01 18:06:18,892 INFO Updated wallet: {'balance': 270.59}, txs: 127
+2026-03-01 18:06:28,893 INFO Updated ai_stats: {'curve': 0, 'lyons': 0, 'stubb': 0}
+2026-03-01 18:06:28,895 INFO Updated wallet: {'balance': 271.39}, txs: 128
+2026-03-01 18:06:38,896 INFO Updated ai_stats: {'curve': 0, 'lyons': 0, 'stubb': 0}
+2026-03-01 18:06:38,899 INFO Updated wallet: {'balance': 276.91}, txs: 129
+2026-03-01 18:06:48,899 INFO Updated ai_stats: {'curve': 0, 'lyons': 0, 'stubb': 0}
+2026-03-01 18:06:48,901 INFO Updated wallet: {'balance': 282.77}, txs: 130
+2026-03-01 18:06:58,904 INFO Updated ai_stats: {'curve': 0, 'lyons': 0, 'stubb': 0}
+2026-03-01 18:06:58,912 INFO Updated wallet: {'balance': 289.79}, txs: 131
+2026-03-01 18:07:08,913 INFO Updated ai_stats: {'curve': 0, 'lyons': 0, 'stubb': 0}
+2026-03-01 18:07:08,915 INFO Updated wallet: {'balance': 286.93}, txs: 132
+2026-03-01 18:07:18,916 INFO Updated ai_stats: {'curve': 0, 'lyons': 0, 'stubb': 0}
+2026-03-01 18:07:18,918 INFO Updated wallet: {'balance': 295.25}, txs: 133
+2026-03-01 18:07:28,919 INFO Updated ai_stats: {'curve': 0, 'lyons': 0, 'stubb': 0}
+2026-03-01 18:07:28,921 INFO Updated wallet: {'balance': 298.36}, txs: 134
+2026-03-01 18:07:38,921 INFO Updated ai_stats: {'curve': 0, 'lyons': 0, 'stubb': 0}
+2026-03-01 18:07:38,923 INFO Updated wallet: {'balance': 306.89}, txs: 135
+2026-03-01 18:07:48,924 INFO Updated ai_stats: {'curve': 0, 'lyons': 0, 'stubb': 0}
+2026-03-01 18:07:48,925 INFO Updated wallet: {'balance': 310.06}, txs: 136
+2026-03-01 18:07:58,932 INFO Updated ai_stats: {'curve': 0, 'lyons': 0, 'stubb': 0}
+2026-03-01 18:07:58,934 INFO Updated wallet: {'balance': 307.87}, txs: 137
+2026-03-01 18:08:08,937 INFO Updated ai_stats: {'curve': 0, 'lyons': 0, 'stubb': 0}
+2026-03-01 18:08:08,940 INFO Updated wallet: {'balance': 304.89}, txs: 138
+2026-03-01 18:08:18,940 INFO Updated ai_stats: {'curve': 0, 'lyons': 0, 'stubb': 0}
+2026-03-01 18:08:18,943 INFO Updated wallet: {'balance': 312.65}, txs: 139
+2026-03-01 18:08:28,943 INFO Updated ai_stats: {'curve': 0, 'lyons': 0, 'stubb': 0}
+2026-03-01 18:08:28,945 INFO Updated wallet: {'balance': 311.53}, txs: 140
+2026-03-01 18:08:38,946 INFO Updated ai_stats: {'curve': 0, 'lyons': 0, 'stubb': 0}
+2026-03-01 18:08:38,948 INFO Updated wallet: {'balance': 308.17}, txs: 141
+2026-03-01 18:08:48,948 INFO Updated ai_stats: {'curve': 0, 'lyons': 0, 'stubb': 0}
+2026-03-01 18:08:48,950 INFO Updated wallet: {'balance': 313.89}, txs: 142
+2026-03-01 18:08:58,951 INFO Updated ai_stats: {'curve': 0, 'lyons': 0, 'stubb': 0}
+2026-03-01 18:08:58,953 INFO Updated wallet: {'balance': 316.05}, txs: 143
+2026-03-01 18:09:08,953 INFO Updated ai_stats: {'curve': 0, 'lyons': 0, 'stubb': 0}
+2026-03-01 18:09:08,955 INFO Updated wallet: {'balance': 320.03}, txs: 144
+2026-03-01 18:09:18,956 INFO Updated ai_stats: {'curve': 0, 'lyons': 0, 'stubb': 0}
+2026-03-01 18:09:18,958 INFO Updated wallet: {'balance': 320.11}, txs: 145
+2026-03-01 18:09:28,959 INFO Updated ai_stats: {'curve': 0, 'lyons': 0, 'stubb': 0}
+2026-03-01 18:09:28,961 INFO Updated wallet: {'balance': 323.52}, txs: 146
+2026-03-01 18:09:38,962 INFO Updated ai_stats: {'curve': 0, 'lyons': 0, 'stubb': 0}
+2026-03-01 18:09:38,964 INFO Updated wallet: {'balance': 324.46}, txs: 147
+2026-03-01 18:09:48,964 INFO Updated ai_stats: {'curve': 0, 'lyons': 0, 'stubb': 0}
+2026-03-01 18:09:48,966 INFO Updated wallet: {'balance': 329.26}, txs: 148
+2026-03-01 18:09:58,973 INFO Updated ai_stats: {'curve': 0, 'lyons': 0, 'stubb': 0}
+2026-03-01 18:09:58,981 INFO Updated wallet: {'balance': 327.75}, txs: 149
+2026-03-01 18:10:08,989 INFO Updated ai_stats: {'curve': 0, 'lyons': 0, 'stubb': 0}
+2026-03-01 18:10:08,991 INFO Updated wallet: {'balance': 325.22}, txs: 150
+2026-03-01 18:10:18,991 INFO Updated ai_stats: {'curve': 0, 'lyons': 0, 'stubb': 0}
+2026-03-01 18:10:18,995 INFO Updated wallet: {'balance': 323.97}, txs: 151
+2026-03-01 18:10:28,996 INFO Updated ai_stats: {'curve': 0, 'lyons': 0, 'stubb': 0}
+2026-03-01 18:10:29,003 INFO Updated wallet: {'balance': 325.5}, txs: 152
+2026-03-01 18:10:39,004 INFO Updated ai_stats: {'curve': 0, 'lyons': 0, 'stubb': 0}
+2026-03-01 18:10:39,006 INFO Updated wallet: {'balance': 322.32}, txs: 153
+2026-03-01 18:10:49,007 INFO Updated ai_stats: {'curve': 0, 'lyons': 0, 'stubb': 0}
+2026-03-01 18:10:49,009 INFO Updated wallet: {'balance': 328.88}, txs: 154
+2026-03-01 18:10:59,012 INFO Updated ai_stats: {'curve': 0, 'lyons': 0, 'stubb': 0}
+2026-03-01 18:10:59,020 INFO Updated wallet: {'balance': 327.0}, txs: 155
+2026-03-01 18:11:09,022 INFO Updated ai_stats: {'curve': 0, 'lyons': 0, 'stubb': 0}
+2026-03-01 18:11:09,024 INFO Updated wallet: {'balance': 336.44}, txs: 156
+2026-03-01 18:11:19,025 INFO Updated ai_stats: {'curve': 0, 'lyons': 0, 'stubb': 0}
+2026-03-01 18:11:19,027 INFO Updated wallet: {'balance': 333.92}, txs: 157
+2026-03-01 18:11:29,028 INFO Updated ai_stats: {'curve': 0, 'lyons': 0, 'stubb': 0}
+2026-03-01 18:11:29,029 INFO Updated wallet: {'balance': 336.54}, txs: 158
+2026-03-01 18:11:39,030 INFO Updated ai_stats: {'curve': 0, 'lyons': 0, 'stubb': 0}
+2026-03-01 18:11:39,032 INFO Updated wallet: {'balance': 333.85}, txs: 159
+2026-03-01 18:11:49,033 INFO Updated ai_stats: {'curve': 0, 'lyons': 0, 'stubb': 0}
+2026-03-01 18:11:49,034 INFO Updated wallet: {'balance': 340.79}, txs: 160
+2026-03-01 18:11:59,035 INFO Updated ai_stats: {'curve': 0, 'lyons': 0, 'stubb': 0}
+2026-03-01 18:11:59,037 INFO Updated wallet: {'balance': 340.92}, txs: 161
+2026-03-01 18:12:09,038 INFO Updated ai_stats: {'curve': 0, 'lyons': 0, 'stubb': 0}
+2026-03-01 18:12:09,040 INFO Updated wallet: {'balance': 336.58}, txs: 162
+2026-03-01 18:12:19,041 INFO Updated ai_stats: {'curve': 0, 'lyons': 0, 'stubb': 0}
+2026-03-01 18:12:19,042 INFO Updated wallet: {'balance': 340.37}, txs: 163
