@@ -1,4 +1,11 @@
-/.venv/
+*.log
+/.venv
+golden_era_marketplace/venv
+__pycache__/
+.pytest_cache/
+.vscode/
+*.pyc
+node_modules//.venv/
 __pycache__/
 *.py[cod]
 *.pyo
