@@ -1,6 +1,26 @@
 {
   "transactions": [
     {
+      "time": "2026-03-01T18:13:39.092140Z",
+      "amount": 8.1,
+      "desc": "tip"
+    },
+    {
+      "time": "2026-03-01T18:13:29.087384Z",
+      "amount": 6.4,
+      "desc": "nft-sale"
+    },
+    {
+      "time": "2026-03-01T18:13:19.085152Z",
+      "amount": -4.11,
+      "desc": "coffee"
+    },
+    {
+      "time": "2026-03-01T18:13:09.076893Z",
+      "amount": 9.48,
+      "desc": "nft-sale"
+    },
+    {
       "time": "2026-03-01T18:12:59.066651Z",
       "amount": -0.84,
       "desc": "mint"
