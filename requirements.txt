@@ -1,0 +1,14 @@
+Pillow
+Flask
+pyttsx3
+gTTS
+SpeechRecognition
+opencv-python
+requests
+# dev
+flake8
+black
+isort
+pytest
+bandit
+mypy
