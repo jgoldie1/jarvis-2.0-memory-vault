@@ -94,9 +94,19 @@ fi
 # -----------------------------
 # 4️⃣ Python Environment & Packages
 # -----------------------------
-python3 -m venv "$ROOT/venv"
-source "$ROOT/venv/bin/activate"
-pip install --upgrade Pillow Flask pyttsx3 gTTS SpeechRecognition opencv-python requests asyncio
+# Try to create a project venv; if it fails, fall back to repo .venv or system
+if python3 -m venv "$ROOT/venv"; then
+	source "$ROOT/venv/bin/activate"
+else
+	echo "$(date) ⚠️ venv creation failed, falling back to repo .venv or system Python" | tee -a "$LOG"
+	if [ -f ".venv/bin/activate" ]; then
+		source ".venv/bin/activate"
+	else
+		echo "$(date) ⚠️ no repo .venv found; continuing with system Python (pip may install globally)" | tee -a "$LOG"
+	fi
+fi
+# Try to install required packages but do not abort the whole script if pip fails
+pip install --upgrade Pillow Flask pyttsx3 gTTS SpeechRecognition opencv-python requests asyncio || true
 
 # -----------------------------
 # 5️⃣ AI Module Placeholders
