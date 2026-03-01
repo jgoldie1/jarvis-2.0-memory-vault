@@ -34,7 +34,10 @@ REQUIRED_FOLDERS = [
     "golden_era_marketplace/ai/lyons",
 ]
 
-DEFAULT_STYLE_CSS = """body{margin:0;background:black;color:white;font-family:Arial,sans-serif;}\nimg{max-width:100%;height:auto;}\n"""
+DEFAULT_STYLE_CSS = (
+    "body{margin:0;background:black;color:white;font-family:Arial,sans-serif;}"
+    "\nimg{max-width:100%;height:auto;}\n"
+)
 
 DEFAULT_APP_JS = """console.log('dashboard loaded');\n"""
 
