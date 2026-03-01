@@ -1,0 +1,9 @@
+Pillow
+Flask
+pyttsx3
+gTTS
+SpeechRecognition
+opencv-python
+requests
+# dev
+flake8
