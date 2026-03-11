@@ -30,3 +30,10 @@ def test_lyons_update_stats():
     mod = import_from_path(path, "lyons_ai")
     assert hasattr(mod, "update_stats")
     assert isinstance(mod.update_stats(), dict)
+
+
+def test_ai_tutor_update_stats():
+    path = Path("golden_era_marketplace/ai/ai_tutor/ai_tutor_ai.py")
+    mod = import_from_path(path, "ai_tutor_ai")
+    assert hasattr(mod, "update_stats")
+    assert isinstance(mod.update_stats(), dict)

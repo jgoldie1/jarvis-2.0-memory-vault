@@ -32,6 +32,7 @@ REQUIRED_FOLDERS = [
     "golden_era_marketplace/ai/curve",
     "golden_era_marketplace/ai/stubb",
     "golden_era_marketplace/ai/lyons",
+    "golden_era_marketplace/ai/ai_tutor",
 ]
 
 DEFAULT_STYLE_CSS = (
@@ -67,6 +68,15 @@ DEFAULT_JSON_FILES = {
         "curve": 0,
         "stubb": 0,
         "lyons": 0,
+        "ai_tutor": 0,
+    },
+    "golden_era_marketplace/fintech/nfts.json": {"nfts": []},
+    "golden_era_marketplace/fintech/passport.json": {
+        "id": "",
+        "name": "",
+        "country": "US",
+        "issued": "",
+        "expires": "",
     },
 }
 
@@ -79,6 +89,9 @@ DEFAULT_AI_MODULES = {
 """,
     "golden_era_marketplace/ai/lyons/lyons_ai.py": """def update_stats():
     return {\"lyons\": 0}
+""",
+    "golden_era_marketplace/ai/ai_tutor/ai_tutor_ai.py": """def update_stats():
+    return {\"ai_tutor\": 0}
 """,
 }
 
