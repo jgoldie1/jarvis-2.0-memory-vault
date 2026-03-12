@@ -5,9 +5,11 @@ from pathlib import Path
 
 def import_from_path(path: Path, name: str):
     spec = importlib.util.spec_from_file_location(name, str(path))
+    assert spec is not None, f"Could not find module at {path}"
     module = importlib.util.module_from_spec(spec)
     sys.modules[name] = module
-    spec.loader.exec_module(module)
+    assert spec.loader is not None
+    spec.loader.exec_module(module)  # type: ignore[union-attr]
     return module
 
 
