@@ -1,0 +1,35 @@
+# ==============================================================================
+# requirements.txt — All American Marketplace Quantum Blockchain
+# Python dependencies for the full stack: node, API, and marketplace features.
+# ==============================================================================
+
+# ── Core web framework ────────────────────────────────────────────────────────
+Flask>=2.3.0
+gunicorn>=21.2.0
+
+# ── HTTP / networking ─────────────────────────────────────────────────────────
+requests>=2.31.0
+
+# ── AI / multimedia ──────────────────────────────────────────────────────────
+Pillow>=10.0.0
+pyttsx3>=2.90
+gTTS>=2.3.2
+SpeechRecognition>=3.10.0
+opencv-python-headless>=4.8.0.74
+
+# ── Crypto / wallet utilities ─────────────────────────────────────────────────
+cryptography>=41.0.0
+pycryptodome>=3.19.0
+mnemonic>=0.20
+
+# ── Data / serialization ──────────────────────────────────────────────────────
+pydantic>=2.0.0
+python-dotenv>=1.0.0
+
+# ── Dev / testing / lint ──────────────────────────────────────────────────────
+pytest>=7.4.0
+flake8>=6.1.0
+black>=23.7.0
+isort>=5.12.0
+bandit>=1.7.5
+mypy>=1.4.1
