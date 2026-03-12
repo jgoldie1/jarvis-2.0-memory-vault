@@ -10,6 +10,7 @@ Lightweight co-pilot that:
 
 Run from the repository root. Designed to be safe and non-destructive.
 """
+
 from __future__ import annotations
 
 import importlib.util
@@ -20,7 +21,7 @@ import threading
 import time
 from datetime import datetime
 from pathlib import Path
-from typing import Dict, Any
+from typing import Any, Dict
 
 try:
     from flask import Flask, jsonify, request
@@ -138,7 +139,9 @@ class UltimateCopilot:
 
         safe_write_json(wallet_path, wallet)
         safe_write_json(tx_path, txs)
-        logging.info("Updated wallet: %s, txs: %d", wallet, len(txs.get("transactions", [])))
+        logging.info(
+            "Updated wallet: %s, txs: %d", wallet, len(txs.get("transactions", []))
+        )
         return wallet, txs
 
     def _speak(self, text: str):
