@@ -64,6 +64,26 @@ def update_ai_stats():
 def wallet():
     return jsonify(load_json(wallet_file))
 
+
+@app.route("/api/wallets")
+def wallets():
+    result = []
+    if wallet_file.exists():
+        try:
+            data = load_json(wallet_file)
+            if data:
+                result.append({"name": "wallet", **data})
+        except Exception:
+            pass
+    for wf in sorted(FINTECH_DIR.glob("wallet-*.json")):
+        try:
+            data = load_json(wf)
+            if data:
+                result.append({"name": wf.stem, **data})
+        except Exception:
+            pass
+    return jsonify(result)
+
 @app.route("/api/nfts")
 def nfts():
     return jsonify(load_json(nfts_file))

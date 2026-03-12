@@ -259,6 +259,32 @@ def process_images(root: Path, resize: tuple[int, int] = (1024, 1024)) -> int:
     return processed
 
 
+def ls_wallets(root: Path) -> list[dict]:
+    """List all wallets found in the fintech directory."""
+    fintech_dir = root / "golden_era_marketplace" / "fintech"
+    wallets: list[dict] = []
+
+    wallet_path = fintech_dir / "wallet.json"
+    if wallet_path.exists():
+        try:
+            data = json.loads(wallet_path.read_text(encoding="utf-8"))
+            wallets.append({"name": "wallet", **data})
+        except Exception:
+            pass
+
+    if not fintech_dir.exists():
+        return wallets
+
+    for wf in sorted(fintech_dir.glob("wallet-*.json")):
+        try:
+            data = json.loads(wf.read_text(encoding="utf-8"))
+            wallets.append({"name": wf.stem, **data})
+        except Exception:
+            pass
+
+    return wallets
+
+
 def start_server(root: Path, port: int = 8000):
     market = root / "golden_era_marketplace"
     market.mkdir(parents=True, exist_ok=True)
@@ -292,10 +318,21 @@ def main() -> None:
     parser.add_argument("--source-images", type=Path, help="Optional source image folder")
     parser.add_argument("--packages", nargs="*", default=list(PACKAGE_MAP.keys()), help="Package list to validate")
     parser.add_argument("--port", type=int, default=8000)
+    parser.add_argument("--ls-wallets", action="store_true", help="List all wallets in the fintech directory")
     args = parser.parse_args()
 
     root = Path(__file__).resolve().parent
     healing_cycle(root, args)
+
+    if args.ls_wallets:
+        wallets = ls_wallets(root)
+        if wallets:
+            print(f"💰 Found {len(wallets)} wallet(s):")
+            for w in wallets:
+                print(f"  {w['name']}: balance={w.get('balance', 'N/A')}")
+        else:
+            print("💰 No wallets found.")
+        return
 
     if args.watch:
         try:
