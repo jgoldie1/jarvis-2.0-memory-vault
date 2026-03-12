@@ -21,3 +21,9 @@ build/
 *.egg-info/
 .pytest_cache/
 .master_system.sh.swp
+/backups/
+/manifests/
+/wallets/
+/recovery/*.tar.gz
+/recovery/*.sha256
+/recovery/*.sig
