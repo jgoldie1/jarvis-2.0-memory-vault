@@ -1,0 +1,14 @@
+{
+  "name": "Quantum Blockchain Dev",
+  "image": "mcr.microsoft.com/devcontainers/python:3.11",
+  "postCreateCommand": "pip install flask cryptography black ruff mypy",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-python.python",
+        "ms-python.pylance",
+        "charliermarsh.ruff"
+      ]
+    }
+  }
+}
