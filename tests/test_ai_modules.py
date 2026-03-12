@@ -1,13 +1,16 @@
 import importlib.util
 import sys
 from pathlib import Path
+from types import ModuleType
 
 
-def import_from_path(path: Path, name: str):
+def import_from_path(path: Path, name: str) -> ModuleType:
     spec = importlib.util.spec_from_file_location(name, str(path))
+    assert spec is not None, f"Could not load spec for {path}"
     module = importlib.util.module_from_spec(spec)
     sys.modules[name] = module
-    spec.loader.exec_module(module)
+    assert spec.loader is not None, f"Spec has no loader for {path}"
+    spec.loader.exec_module(module)  # type: ignore[attr-defined]
     return module
 
 

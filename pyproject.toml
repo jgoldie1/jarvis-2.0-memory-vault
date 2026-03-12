@@ -1,0 +1,27 @@
+[tool.black]
+line-length = 88
+target-version = ["py312"]
+
+[tool.ruff]
+line-length = 88
+target-version = "py312"
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I"]
+ignore = []
+
+[tool.mypy]
+python_version = "3.12"
+ignore_missing_imports = true
+warn_return_any = true
+warn_unused_configs = true
+strict = false
+
+[[tool.mypy.overrides]]
+module = [
+    "golden_era_marketplace.*",
+    "lovable_dev_test",
+    "super_copilot_autofix",
+    "ultimate_copilot",
+]
+ignore_errors = true
