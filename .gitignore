@@ -21,3 +21,4 @@ build/
 *.egg-info/
 .pytest_cache/
 .master_system.sh.swp
+data/chain.json

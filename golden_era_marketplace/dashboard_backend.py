@@ -1,8 +1,8 @@
 import json
-import time
 import random
 from pathlib import Path
-from flask import Flask, jsonify, send_file, redirect
+
+from flask import Flask, jsonify, redirect, send_file
 
 app = Flask(__name__)
 
@@ -14,6 +14,10 @@ nfts_file = FINTECH_DIR / "nfts.json"
 passport_file = FINTECH_DIR / "passport.json"
 ai_stats_file = FINTECH_DIR / "ai_stats.json"
 
+# Static server host (frontend preview)
+STATIC_HOST = "http://127.0.0.1:8000"
+
+
 def load_json(path: Path):
     try:
         if not Path(path).exists():
@@ -23,6 +27,7 @@ def load_json(path: Path):
     except Exception:
         return {}
 
+
 def save_json(path: Path, data):
     try:
         Path(path).parent.mkdir(parents=True, exist_ok=True)
@@ -31,9 +36,6 @@ def save_json(path: Path, data):
     except Exception:
         # swallow errors but log to stdout for visibility
         print(f"Failed to write JSON to {path}")
-
-# Static server host (frontend preview)
-STATIC_HOST = "http://127.0.0.1:8000"
 
 
 @app.route("/")
@@ -48,33 +50,39 @@ def index():
 def redirect_to_static():
     return redirect(STATIC_HOST)
 
+
 # Simulate AI stats updates
 def update_ai_stats():
     stats = load_json(ai_stats_file)
     stats.setdefault('curve', 0)
     stats.setdefault('stubb', 0)
     stats.setdefault('lyons', 0)
-    stats['curve'] += random.randint(0,5)
-    stats['stubb'] += random.randint(0,5)
-    stats['lyons'] += random.randint(0,5)
+    stats['curve'] += random.randint(0, 5)
+    stats['stubb'] += random.randint(0, 5)
+    stats['lyons'] += random.randint(0, 5)
     save_json(ai_stats_file, stats)
     return stats
+
 
 @app.route("/api/wallet")
 def wallet():
     return jsonify(load_json(wallet_file))
 
+
 @app.route("/api/nfts")
 def nfts():
     return jsonify(load_json(nfts_file))
+
 
 @app.route("/api/passport")
 def passport():
     return jsonify(load_json(passport_file))
 
+
 @app.route("/api/ai_stats")
 def ai_stats():
     return jsonify(update_ai_stats())
+
 
 if __name__ == "__main__":
     app.run(port=5000)
