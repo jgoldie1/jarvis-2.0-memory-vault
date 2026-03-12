@@ -1,2 +1,2 @@
 def update_stats():
-    return {"ai_tutor":0}
+    return {"ai_tutor": 0}
