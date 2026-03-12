@@ -3,6 +3,7 @@
 
 Self-healing workflow for `golden_era_marketplace`.
 """
+
 import argparse
 import importlib
 import json
@@ -11,7 +12,6 @@ import subprocess
 import sys
 import time
 from pathlib import Path
-
 
 PACKAGE_MAP = {
     "Pillow": "PIL",
@@ -94,7 +94,9 @@ def ensure_folders(root: Path) -> int:
     return created
 
 
-def ensure_text_file(path: Path, content: str, overwrite_invalid_placeholder: bool = True) -> bool:
+def ensure_text_file(
+    path: Path, content: str, overwrite_invalid_placeholder: bool = True
+) -> bool:
     if not path.exists():
         path.parent.mkdir(parents=True, exist_ok=True)
         path.write_text(content, encoding="utf-8")
@@ -128,9 +130,17 @@ def ensure_json_file(path: Path, default_payload: dict) -> bool:
 
 def ensure_core_files(root: Path) -> int:
     changes = 0
-    changes += int(ensure_text_file(root / "golden_era_marketplace/index.html", DEFAULT_INDEX_HTML))
-    changes += int(ensure_text_file(root / "golden_era_marketplace/css/style.css", DEFAULT_STYLE_CSS))
-    changes += int(ensure_text_file(root / "golden_era_marketplace/js/app.js", DEFAULT_APP_JS))
+    changes += int(
+        ensure_text_file(root / "golden_era_marketplace/index.html", DEFAULT_INDEX_HTML)
+    )
+    changes += int(
+        ensure_text_file(
+            root / "golden_era_marketplace/css/style.css", DEFAULT_STYLE_CSS
+        )
+    )
+    changes += int(
+        ensure_text_file(root / "golden_era_marketplace/js/app.js", DEFAULT_APP_JS)
+    )
 
     for rel, payload in DEFAULT_JSON_FILES.items():
         changes += int(ensure_json_file(root / rel, payload))
@@ -158,7 +168,9 @@ def _replace_image_paths(content: str) -> tuple[str, int]:
     total = 0
     updated = content
     for pattern in patterns:
-        updated, count = re.subn(pattern, r"\g<q>images_processed/\g<name>\g<q>", updated)
+        updated, count = re.subn(
+            pattern, r"\g<q>images_processed/\g<name>\g<q>", updated
+        )
         total += count
     return updated, total
 
@@ -184,7 +196,8 @@ def repair_paths_and_warnings(root: Path) -> int:
                 "\n<script>\n"
                 "document.querySelectorAll('img').forEach((img) => {\n"
                 "  img.addEventListener('error', () => {\n"
-                "    console.warn('[copilot-autofix] Missing image:', img.getAttribute('src'));\n"
+                "    console.warn("
+                "'[copilot-autofix] Missing image:', img.getAttribute('src'));\n"
                 "  });\n"
                 "});\n"
                 "</script>\n"
@@ -214,7 +227,12 @@ def copy_images(root: Path, source: Path) -> int:
     copied = 0
 
     for item in source.iterdir():
-        if not item.is_file() or item.suffix.lower() not in {".png", ".jpg", ".jpeg", ".webp"}:
+        if not item.is_file() or item.suffix.lower() not in {
+            ".png",
+            ".jpg",
+            ".jpeg",
+            ".webp",
+        }:
             continue
         target = destination / item.name
         if not target.exists() or item.stat().st_mtime > target.stat().st_mtime:
@@ -242,7 +260,12 @@ def process_images(root: Path, resize: tuple[int, int] = (1024, 1024)) -> int:
         return 0
 
     for file_path in src.iterdir():
-        if not file_path.is_file() or file_path.suffix.lower() not in {".png", ".jpg", ".jpeg", ".webp"}:
+        if not file_path.is_file() or file_path.suffix.lower() not in {
+            ".png",
+            ".jpg",
+            ".jpeg",
+            ".webp",
+        }:
             continue
         out_path = dst / file_path.name
         try:
@@ -262,7 +285,9 @@ def process_images(root: Path, resize: tuple[int, int] = (1024, 1024)) -> int:
 def start_server(root: Path, port: int = 8000):
     market = root / "golden_era_marketplace"
     market.mkdir(parents=True, exist_ok=True)
-    process = subprocess.Popen([sys.executable, "-m", "http.server", str(port)], cwd=str(market))
+    process = subprocess.Popen(
+        [sys.executable, "-m", "http.server", str(port)], cwd=str(market)
+    )
     print(f"✅ Server started: http://localhost:{port} (PID {process.pid})")
     return process
 
@@ -283,14 +308,37 @@ def healing_cycle(root: Path, args: argparse.Namespace) -> None:
 
 
 def main() -> None:
-    parser = argparse.ArgumentParser(description="Copilot self-healing for Golden Era Marketplace")
-    parser.add_argument("--install-deps", action="store_true", help="Install missing Python dependencies")
-    parser.add_argument("--process-images", action="store_true", help="Resize and normalize marketplace images")
-    parser.add_argument("--start-server", action="store_true", help="Run python HTTP server after healing")
+    parser = argparse.ArgumentParser(
+        description="Copilot self-healing for Golden Era Marketplace"
+    )
+    parser.add_argument(
+        "--install-deps",
+        action="store_true",
+        help="Install missing Python dependencies",
+    )
+    parser.add_argument(
+        "--process-images",
+        action="store_true",
+        help="Resize and normalize marketplace images",
+    )
+    parser.add_argument(
+        "--start-server",
+        action="store_true",
+        help="Run python HTTP server after healing",
+    )
     parser.add_argument("--watch", action="store_true", help="Keep healing in a loop")
-    parser.add_argument("--interval", type=int, default=45, help="Watch interval in seconds")
-    parser.add_argument("--source-images", type=Path, help="Optional source image folder")
-    parser.add_argument("--packages", nargs="*", default=list(PACKAGE_MAP.keys()), help="Package list to validate")
+    parser.add_argument(
+        "--interval", type=int, default=45, help="Watch interval in seconds"
+    )
+    parser.add_argument(
+        "--source-images", type=Path, help="Optional source image folder"
+    )
+    parser.add_argument(
+        "--packages",
+        nargs="*",
+        default=list(PACKAGE_MAP.keys()),
+        help="Package list to validate",
+    )
     parser.add_argument("--port", type=int, default=8000)
     args = parser.parse_args()
 
@@ -299,7 +347,9 @@ def main() -> None:
 
     if args.watch:
         try:
-            print(f"🔁 Self-healing loop active (every {args.interval}s). Ctrl-C to stop.")
+            print(
+                f"🔁 Self-healing loop active (every {args.interval}s). Ctrl-C to stop."
+            )
             while True:
                 time.sleep(args.interval)
                 healing_cycle(root, args)
