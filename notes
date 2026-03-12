@@ -1,1 +1,8 @@
+Project notes
+=============
 
+- Run `python3 super_copilot_autofix.py` to validate/repair the marketplace scaffold.
+- Run `python3 Jarvis_os/main.py` to start the full Jarvis OS stack.
+- Tests: `pytest tests/ lovable_dev_test.py`
+- Fintech JSON files live in golden_era_marketplace/fintech/.
+- AI module stubs live in golden_era_marketplace/ai/<name>/<name>_ai.py.

@@ -1,1 +1,11 @@
+lovable-dev integration
+=======================
 
+This file tracks the connection between this repository and the lovable.dev
+visual editor. When using lovable.dev to scaffold or edit frontend components,
+push changes back to the golden_era_marketplace/ directory and run the
+self-healing script to ensure consistency:
+
+  python3 super_copilot_autofix.py --process-images
+
+lovable.dev project URL: (add your project URL here)
