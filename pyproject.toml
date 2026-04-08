@@ -1,0 +1,22 @@
+[tool.black]
+line-length = 88
+
+[tool.ruff]
+line-length = 88
+exclude = ["super_copilot_autofix.py", "ultimate_copilot.py"]
+
+[tool.ruff.lint]
+select = ["E", "F", "I"]
+
+[tool.mypy]
+python_version = "3.12"
+strict = false
+ignore_missing_imports = true
+exclude = [
+    "golden_era_marketplace",
+    "Jarvis_os",
+    "tests/test_ai_modules.py",
+    "lovable_dev_test.py",
+    "super_copilot_autofix.py",
+    "ultimate_copilot.py",
+]
