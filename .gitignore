@@ -1,23 +1,28 @@
+# ── Logs ────────────────────────────────────────────────────────────────
 *.log
-/.venv
+logs/
+
+# ── Node.js ─────────────────────────────────────────────────────────────
+node_modules/
+dist/
+build/
+
+# ── Python ──────────────────────────────────────────────────────────────
+.venv
 golden_era_marketplace/venv
-__pycache__/
-.pytest_cache/
-.vscode/
-*.pyc
-node_modules//.venv/
 __pycache__/
 *.py[cod]
 *.pyo
 *.pyd
-*.swp
-*.swo
-.DS_Store
-.env
-.vscode/
-.idea/
-dist/
-build/
 *.egg-info/
 .pytest_cache/
-.master_system.sh.swp
+
+# ── Editor / OS ─────────────────────────────────────────────────────────
+.vscode/
+.idea/
+.DS_Store
+*.swp
+*.swo
+
+# ── Secrets ─────────────────────────────────────────────────────────────
+.env
