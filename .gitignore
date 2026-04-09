@@ -1,4 +1,5 @@
 *.log
+backups/
 /.venv
 golden_era_marketplace/venv
 __pycache__/
