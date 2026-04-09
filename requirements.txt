@@ -1,3 +1,4 @@
+cryptography
 Pillow
 Flask
 pyttsx3
@@ -5,13 +6,7 @@ gTTS
 SpeechRecognition
 opencv-python
 requests
-gunicornPillow
-Flask
-pyttsx3
-gTTS
-SpeechRecognition
-opencv-python
-requests
+gunicorn
 # dev
 flake8
 black
