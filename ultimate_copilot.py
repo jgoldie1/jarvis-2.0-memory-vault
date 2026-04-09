@@ -10,6 +10,7 @@ Lightweight co-pilot that:
 
 Run from the repository root. Designed to be safe and non-destructive.
 """
+
 from __future__ import annotations
 
 import importlib.util
@@ -64,8 +65,10 @@ def import_ai_module(mod_path: Path, name: str):
         return None
     try:
         spec = importlib.util.spec_from_file_location(name, str(mod_path))
+        if spec is None:
+            return None
         module = importlib.util.module_from_spec(spec)
-        spec.loader.exec_module(module)  # type: ignore
+        spec.loader.exec_module(module)  # type: ignore[union-attr]
         return module
     except Exception:
         logging.exception("Failed to import AI module %s", mod_path)
@@ -138,7 +141,9 @@ class UltimateCopilot:
 
         safe_write_json(wallet_path, wallet)
         safe_write_json(tx_path, txs)
-        logging.info("Updated wallet: %s, txs: %d", wallet, len(txs.get("transactions", [])))
+        logging.info(
+            "Updated wallet: %s, txs: %d", wallet, len(txs.get("transactions", []))
+        )
         return wallet, txs
 
     def _speak(self, text: str):
